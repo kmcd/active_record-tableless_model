@@ -1,6 +1,33 @@
 = active_record-tableless_model
 
-Description goes here.
+Simplify creating ActiveRecord clases which don't need a database table. Useful for:
+
+* Factory method, ie creating other classes
+* Wizard (multi-step) forms
+* Presenter style forms handling mutiple models
+
+Thanks to Ryan Bates <a href="http://railscasts.com/episodes/193-tableless-model">Tableless Model Railscast</a>
+and the  <a href="http://asciicasts.com/episodes/193-tableless-model.html for the inspiration">Tableless Model asciicast</a> .
+
+There is an <a href="http://www.keithmcdonnell.net/">active_record-tableless_model introduction on Keith McDonnells ruby blog</a> . 
+
+== Install
+
+@$ gem install active_record-tableless_model@ 
+
+== Usage
+
+   require 'active_record-tableless_model'
+
+   class Task < ActiveRecord::Base
+     no_table 
+     
+     column :description,  :text
+     column :priority,     :integer
+     column :project_id,   :string  
+   end 
+
+Note that your class must still inherit from ActiveRecord if you need to use validations and associations.
 
 == Note on Patches/Pull Requests
  
@@ -14,4 +41,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 Keith Mc Donnell. See LICENSE for details.
+Copyright (c) 2011 "Keith Mc Donnell":http://www.keithmcdonnell.net . See LICENSE for details.

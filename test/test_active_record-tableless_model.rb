@@ -2,12 +2,12 @@ require 'helper'
 require 'active_record'
 
 class Task < ActiveRecord::Base
-  include TablelessModel
+  no_table
   column :description
 end
 
 class Project < ActiveRecord::Base
-  include TablelessModel
+  no_table
   column :name
 end
 
