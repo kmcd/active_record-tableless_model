@@ -7,9 +7,9 @@ Simplify creating ActiveRecord clases which don't need a database table. Useful 
 * Presenter style forms handling mutiple models
 
 Thanks to {Ryan Bates Tableless Model Railscast}[http://railscasts.com/episodes/193-tableless-model]
-and the {Tableless Model asciicast}[http://asciicasts.com/episodes/193-tableless-model.html for the inspiration].
+and the {Tableless Model asciicast}[http://asciicasts.com/episodes/193-tableless-model.html for the inspiration] .
 
-There is an <a href="http://www.keithmcdonnell.net/">active_record-tableless_model introduction on Keith McDonnells ruby blog</a> . 
+There is an {active_record-tableless_model introduction on Keith McDonnells ruby blog}[http://www.keithmcdonnell.net] . 
 
 == Install
 
